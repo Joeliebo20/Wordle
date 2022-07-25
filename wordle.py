@@ -38,6 +38,7 @@ def game():
 
     while True:
         guess = input("Enter a guess: ")
+        guess = guess.lower()
         if len(guess) >= 6 or len(guess) <= 4:
             print("Guess must be 5 letters, try again!")
             continue
